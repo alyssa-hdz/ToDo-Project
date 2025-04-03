@@ -9,6 +9,7 @@ import EditToDo from './EditToDos';
 import './index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import ContactForm from './ContactForm';
 
  
 
@@ -80,7 +81,7 @@ function App() {
             }
           />
           <Route path="/add" element={<AddToDos onAdd={addToDos} />} />
-     
+          <Route path="/contact" element={<ContactForm/>} />
           <Route
             path="/edit/:id"
             element={<EditToDo ToDos={ToDos} onUpdate={updateToDo} />}

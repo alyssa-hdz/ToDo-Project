@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(67, 188, 96);
+  
 }
 
 .App-link {
@@ -41,29 +41,32 @@
 
 
 .form-label{
-  padding-top: 15px;
-  color: #6da2db;
+  padding-top: 20px;
+  color: #152a41;
   font-weight: bold;
 }
 .form-control{
   padding: 12px;
   border-radius: 10px;
-  border: 3px solid #6496cb !important;
+  border: 3px solid #152a41 !important;
+  box-shadow: 8px 8px 20px   #152a41  !important ;
 
 }
 .form-check-label{
-  color: #6da2db;
+  color: #071728;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 20px;
+ 
 }
 
 .buttonsnav{
   justify-content: flex-end ;
   display:flex ;
   gap: 12px ;
+  padding-bottom: 20px;
 }
 .label{
-  background-color: #6496cb !important;
+  background-color:  #152a41  !important;
 }
 .btn-danger{
   background-color: #6496cb !important;
@@ -76,7 +79,7 @@
 
 .table-bordered, table{
   border: 3px solid black !important;
-  box-shadow: 8px 8px 15px  #5891cd !important ;
+  box-shadow: 8px 8px 15px   #152a41  !important ;
   
 }
 
@@ -85,6 +88,7 @@
   border-radius: 12px !important;
   border-color: #6496cb !important;
   color: aliceblue !important;
+  box-shadow: 8px 8px 20px   #152a41  !important ;
 }
 
 .form-select{
@@ -92,11 +96,56 @@
   border-radius: 50px ;
   border-color: #6496cb !important;
   color: aliceblue !important;
+  
 }
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 .text-center{
   font-family:'Indie Flower' ;
   font-size: 50px;
-  color: #1a5ea7;
+  
+
+color: #edcf5a;
+  text-shadow: 
+    0 0 5px #fff, 
+    0 0 10px #fff, 
+    0 0 20px #ffcc00, 
+    0 0 30px #ffcc00, 
+    0 0 40px #ffcc00, 
+    0 0 50px #ffcc00,
+    0 0 60px #ffcc00,
+    0 0 70px #ffcc00;
+
+  
+}
+.formContainer{
+  background-color: transparent;
+  
+
+}
+.formtitles{
+  margin-bottom:20px;
+  color: #071728;
+  font-weight: bold;
+  font-size: 20px; padding: 12px;
+  border-radius: 10px;
+  border: 3px solid  #152a41  !important;
+  box-shadow: 8px 8px 20px   #152a41  !important ;
+  
+}
+
+.subbtn{
+  background-color: #6496cb !important ;
+  border-radius: 12px !important;
+  border-color: #6496cb !important;
+  color: aliceblue !important;
+  box-shadow: 8px 8px 20px   #152a41  !important ;
+}
+
+
+.forminput{
+  padding: 12px;
+  border-radius: 10px;
+  border: 3px solid #6496cb !important;
+
 }
