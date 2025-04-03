@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -21,7 +22,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(67, 188, 96);
 }
 
 .App-link {
@@ -37,11 +38,65 @@
   }
 }
 
+
+
+.form-label{
+  padding-top: 15px;
+  color: #6da2db;
+  font-weight: bold;
+}
+.form-control{
+  padding: 12px;
+  border-radius: 10px;
+  border: 3px solid #6496cb !important;
+
+}
+.form-check-label{
+  color: #6da2db;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.buttonsnav{
+  justify-content: flex-end ;
+  display:flex ;
+  gap: 12px ;
+}
+.label{
+  background-color: #6496cb !important;
+}
+.btn-danger{
+  background-color: #6496cb !important;
+  border-radius: 50px !important;
+  border-color: #6496cb !important;
+}
+.btn-warning{
+  border-radius: 50px !important;
+}
+
+.table-bordered, table{
+  border: 3px solid black !important;
+  box-shadow: 8px 8px 15px  #5891cd !important ;
+  
+}
+
+.btn{
+  background-color: #6496cb !important ;
+  border-radius: 12px !important;
+  border-color: #6496cb !important;
+  color: aliceblue !important;
+}
+
+.form-select{
+  background-color: #6496cb !important ;
+  border-radius: 50px ;
+  border-color: #6496cb !important;
+  color: aliceblue !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-body {
-  font-family: 'Indie Flower', sans-serif;
-  font-size: larger;
-  background-color: rgb(138, 189, 241)
-  ;
+.text-center{
+  font-family:'Indie Flower' ;
+  font-size: 50px;
+  color: #1a5ea7;
 }

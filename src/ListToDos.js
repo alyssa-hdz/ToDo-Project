@@ -1,13 +1,16 @@
 import {Link} from "react-router-dom";
 import React, { useState } from 'react';
 
-function ListToDos({ToDos , onDelete})
+function ListToDos({ToDos , onDelete, onToggleComplete})
 {
   const [filterStatus , setFilterStatus] = useState('All');
 
  
-  const filteredToDos = ToDos.filter(toDo=> {
-  });
+  // const filteredToDos = ToDos.filter(toDo=> {
+  // });
+  const filteredToDos = ToDos.filter(toDo => {
+    return (filterStatus == 'All' || (filterStatus == 'Completed' && toDo.status) || (filterStatus == 'Incomplete' && !toDo.status))
+ });
 
     return (
       <div>
@@ -20,13 +23,13 @@ function ListToDos({ToDos , onDelete})
           </select>
         </div>
         <div className="table-responsive mt-4">
-          <table className="table table-bordered">
+          <table className="table table-bordered ">
             <thead className="table-dark">
               <tr>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Status</th>
-                <th>Actions</th>
+                <th class="label">Title</th>
+                <th class="label">Description</th>
+                <th class="label">Status</th>
+                <th class="label">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -37,6 +40,10 @@ function ListToDos({ToDos , onDelete})
                   <td>{toDo.status == true ? 'Completed' : 'Incompleted'}</td>
                 
                   <td>
+                    <button className={`btn btn-${toDo ? 'success' :'warning'}btn-sm me-2`}
+                    onClick ={()=> onToggleComplete(toDo.id)}>
+                      {toDo.status ? 'Mark Incomplete': 'Mark Complete'}
+                      </button>
                     <Link className="btn btn-warning btn-sm me-2" to={`/edit/${toDo.id}`}>Edit</Link>
                     <button className="btn btn-danger btn-sm" onClick={() => onDelete(toDo.id)}>Delete</button>
                   </td>

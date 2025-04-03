@@ -17,11 +17,11 @@ function ToDosForm({ initialData , onSubmit})
 
     function handleStatusChange()
     {
-       setFormData({...formData , status: !formData.status})
+       setFormData({...formData , status: !formData.status});
     }
     return (
         <form onSubmit={handleSubmit}>
-          <div className="mb-3">
+          <div className="mb-3 formbackground" >
             <label className="form-label">Title</label>
             <input
               type="text"
@@ -53,7 +53,7 @@ function ToDosForm({ initialData , onSubmit})
           </div>
           <button type="submit" className="btn btn-primary">Save</button>
         </form>
-      );
+      ); 
 }
 
 export default ToDosForm;

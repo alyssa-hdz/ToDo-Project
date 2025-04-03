@@ -1,21 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Indie Flower', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e5ecf3 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
-body {
-  font-family: 'Indie Flower', sans-serif;
-  font-size: larger;
-  background-color: rgb(138, 189, 241)
-  ;
-}
+
+
+
+
