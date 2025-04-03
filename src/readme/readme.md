@@ -15,3 +15,8 @@ Contact: display a page where you can submit your feedback using first name,last
 -github
 -js
 -css
+
+<!-- Ideas for Improvement  -->
+-work on css and react together for better/easier styling
+- homepage not be blank when intially pulled up on web page
+- once task is completed be able to highlight it so it stands out as completed not just the word completed
